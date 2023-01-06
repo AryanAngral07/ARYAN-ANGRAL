@@ -60,3 +60,68 @@ label:
 
     return 0;
 }
+//or you can take input in char type for gender
+//here is the code for you
+#include <stdio.h>
+int main()
+{
+label:
+    char gender;
+    float salary, bonus;
+    printf("PLEASE ENTER THE GENDER \n M/m :MALE \n F/f: FEMALE \n");
+    scanf("%c", &gender);
+
+    switch (gender)
+    {
+
+    case('M'):
+    case('m'):
+        printf("Enter the salary of the employee:");
+        scanf("%f", &salary);
+        if (salary > 10000)
+        {
+            bonus = salary * 0.05;
+        }
+        else if (salary <= 10000)
+        {
+            bonus = salary * 0.07;
+        }
+        else
+        {
+            printf("------------INVALID INPUT---------------");
+            printf("\n PLEASE ENTER THE CORRECT INPUT ");
+        }
+        break;
+    case ('F'):
+    case ('f'):
+        printf("Enter the salary of the employee:");
+        scanf("%f", &salary);
+        if (salary > 10000)
+        {
+            bonus = salary * 0.10;
+        }
+        else if (salary <= 10000)
+        {
+            bonus = salary * 0.12;
+        }
+        else
+        {
+            printf("------------INVALID INPUT---------------");
+            printf("\n PLEASE ENTER THE CORRECT INPUT ");
+        }
+        break;
+
+    default:
+
+        printf("------------INVALID INPUT---------------");
+        printf("\n PLEASE ENTER THE CORRECT INPUT ");
+        goto label;
+        break;
+    }
+
+    printf("Bonus is %f", bonus);
+    printf("\nSalary after bonus is %f", salary + bonus);
+
+    return 0;
+}
+
