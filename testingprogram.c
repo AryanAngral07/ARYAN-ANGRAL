@@ -4,19 +4,19 @@ int main()
 {
     label:
     long int password;
-    printf("enetr pin to acess the program :");
+    printf("enter pin to access the program :");
     scanf("%d",&password);
     if (password == 12345)
     {
         int a;
-        printf("\n1_addidas\n2_armani\n3_zara\n4_gucci\n5_HnM\n6_octave");
+        printf("\1_ADDIDAS\n2_ARMANI\n3_ZARA\n4_GUCCI\n5_HnM\n6_OCTAVE");
         printf("\n\tEnter the choice : ");
         scanf("%d", &a);
         switch (a)
         {
         case 1:
             int a;
-            printf("\n1_ladies\n2_gents\n3_childrens\n");
+            printf("\n1_LADIES\n2_GENTS\n3_CHILDREN\n");
             printf("\n\tEnter the choice : \n");
             scanf("%d", &a);
 
@@ -40,7 +40,7 @@ int main()
 
         case 2:
             int b;
-            printf("\n1_ladies\n2_gents\n3_childrens\n");
+            printf("\n1_LADIES\n2_GENTS\n3_CHILDRENS\n");
             printf("\n\tEnter the choice : \n");
             scanf("%d", &b);
 
@@ -64,7 +64,7 @@ int main()
 
         case 3:
             int c;
-            printf("\n1_ladies\n2_gents\n3_children");
+            printf("\n1_LADIES\n2_GENTS\n3_CHILDRENS");
             printf("\n\tEnter the choice: \n");
             scanf("%d", &c);
 
@@ -89,7 +89,7 @@ int main()
 
         case 4:
             int d;
-            printf("\n1_ladies\n2_gents\n3_children");
+            printf("\n1_LADIES\n2_GENTS\n3_CHILDRENS");
             printf("\n\tEnter the choice: ");
             scanf("%d", &d);
             if (d == 1)
@@ -111,7 +111,7 @@ int main()
             break;
         case 5:
             int e;
-            printf("\n1_ladies\n2_gents\n3_childrens\n");
+            printf("\n1_LADIES\n2_GENTS\n3_CHILDRENS\n");
             printf("\n\tEnter the choice : \n");
             scanf("%d", &e);
 
@@ -135,7 +135,7 @@ int main()
             break;
         case 6:
             int f;
-            printf("\n1_ladies\n2_gents\n3_childrens\n");
+            printf("\n1_LADIES\n2_GENTS\n3_CHILDRENS\n");
             printf("\n\tEnter the choice : \n");
             scanf("%d", &f);
 
@@ -163,8 +163,8 @@ int main()
     }
     else
     {
-        printf("enter correct password\n");
-    }
+    printf("enter correct password\n");
     goto label;
+    }
     return 0;
 }

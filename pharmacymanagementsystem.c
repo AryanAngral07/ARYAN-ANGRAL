@@ -23,7 +23,7 @@ int rand_order(void);
 //
 // Created by SAMMU on 5/6/20.
 //
-#include<general.h>
+
 //get system date
 date sys_date(void){
  date sys_date;
@@ -46,7 +46,7 @@ int rand_order(void){
 //
 #ifndef CMINIPROJECT_PHARMACIST_H
 #define CMINIPROJECT_PHARMACIST_H
-#include "general.h"
+
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
